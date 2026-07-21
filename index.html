@@ -1,19 +1,102 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8" />
-    <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1.0"
-    />
-    <title>Title</title>
-    <link
-      rel="stylesheet"
-      href="src/styles/main.scss"
-    />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Creative Bakery</title>
+    <link rel="icon" type="image/svg+xml"
+    href="/src/images/logo.svg">
+    <link rel="stylesheet" href="/src/styles/main.scss">
   </head>
+
   <body>
-    <h1>Hello Mate Academy</h1>
-    <script src="src/scripts/main.js"></script>
+    <!-- ===================== HEADER ===================== -->
+    <header class="header">
+      <div class="container header__inner">
+        <a href="#top" class="header__logo">
+          <img class="  -mark" src="/src/images/logo.svg"
+          alt="Bakerlab logo">
+        </a>
+
+        <input type="checkbox" id="menu-toggle"
+        class="menu-toggle">
+
+        <div class="header__right">
+          <nav class="header__nav">
+            <ul class="header__list">
+              <li><a href="#products" class="header__link">Products</a></li>
+              <li><a href="#about" class="header__link">About Us</a></li>
+              <li><a href="#" class="header__link">Blog</a></li>
+              <li>
+                <a href="tel:+16295550129" class="header__contact">
+                  <img src="/src/images/phone.svg"
+                  class="header__contact-icon"
+                  alt="phone">
+                  Contact us
+                </a>
+              </li>
+            </ul>
+          </nav>
+
+          <button type="button" id="theme-toggle"
+          class="theme-toggle" aria-pressed="false"
+            aria-label="Switch background theme (pink / blue)">
+            <span class="theme-toggle__track">
+              <span class="theme-toggle__thumb"></span>
+            </span>
+          </button>
+
+          <label for="menu-toggle" class="header__burger"
+          aria-label="Open menu">
+            <img
+              src="/src/images/icon-menu.svg"
+              alt="menu"
+              class="header__burger-icon">
+          </label>
+        </div>
+
+        <!-- Full-screen mobile/tablet menu (checkbox-driven, no JS required to open) -->
+        <div class="mobile-menu">
+          <div class="mobile-menu__top">
+            <a href="#top" class="header__logo">
+              <img
+              class="header__logo-mark"
+              src="/src/images/logo.svg"
+              alt="Bakerlab logo">
+            </a>
+            <label for="menu-toggle"
+            class="mobile-menu__close"
+            aria-label="Close menu">
+              <img
+              src="/src/images/icon-close.svg"
+              alt="close"
+              class="mobile-menu__close-icon">
+            </label>
+          </div>
+
+          <ul class="mobile-menu__list">
+            <li><a href="#products" class="mobile-menu__link">Products</a></li>
+            <li><a href="#about" class="mobile-menu__link">About Us</a></li>
+            <li><a href="#" class="mobile-menu__link">Blog</a></li>
+            <li>
+              <a href="tel:+16295550129" class="mobile-menu__contact">
+                <img
+                  src="/src/images/phone.svg"
+                  class="mobile-menu__contact-icon"
+                  alt="phone">
+                Contact us
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </header>
+
+    <main id="top">
+      <!-- Hero / Products / About us / Footer come next -->
+    </main>
+
+    <script type="module" src="/src/scripts/main.js"></script>
   </body>
+
 </html>
