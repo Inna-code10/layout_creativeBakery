@@ -100,11 +100,19 @@
     @include header-collapse {
       display: none;
     }
+
+    &:hover {
+      transform: scale(1.05);
+    }
   }
 
   &__contact-icon {
     width: 18px;
     height: 18px;
+
+    &:hover {
+      transform: scale(1.05);
+    }
   }
 
   &__burger {
@@ -114,6 +122,10 @@
 
     @include header-collapse {
       display: block;
+    }
+
+    &:hover {
+      transform: scale(1.05);
     }
   }
 }
@@ -147,6 +159,10 @@
   &__close {
     cursor: pointer;
     transition: opacity $transition;
+
+    &:hover {
+      transform: scale(1.05);
+    }
   }
 
   &__list {
@@ -190,12 +206,20 @@
       opacity $transition;
 
     @include uppercase-label;
+
+    &:hover {
+      transform: scale(1.05);
+    }
   }
 
   &__contact-icon {
     width: 18px;
     height: 18px;
   }
+
+    &:hover {
+      transform: scale(1.05);
+    }
 }
 
 .menu-toggle:checked~.mobile-menu {
