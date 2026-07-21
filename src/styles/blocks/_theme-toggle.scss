@@ -1,17 +1,17 @@
 .theme-toggle {
-  display: inline-flex;
   cursor: pointer;
-  align-items: center;
+  display: inline-flex;
   flex-shrink: 0;
+  align-items: center;
+
 
   &__track {
     position: relative;
 
     width: 48px;
     height: 26px;
-    border-radius: $radius-pill;
-
     border: 1px solid rgba(28, 26, 38, 0.15);
+    border-radius: $radius-pill;
 
     background: linear-gradient(90deg, $color-light-pink 50%, $color-light-blue 50%);
   }
@@ -27,7 +27,7 @@
 
     background-color: $color-white;
     box-shadow: 0 1px 3px rgba(28, 26, 38, 0.3);
-    
+
     transition: transform $transition;
   }
 
