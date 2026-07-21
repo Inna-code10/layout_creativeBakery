@@ -1,9 +1,7 @@
 .hero {
   min-height: 100vh;
   padding-top: 88px;
-
   background-color: var(--color-bg);
-
   transition: background-color $transition;
 
   @include header-collapse {
@@ -38,13 +36,11 @@
   &__description {
     grid-column: 1 / span 2;
     align-self: center;
-
     max-width: 260px;
 
     @include header-collapse {
       grid-column: 1 / span 4;
       align-self: start;
-
       max-width: 280px;
     }
 
@@ -52,7 +48,6 @@
       width: 100%;
       max-width: 288px;
       margin: 0 auto;
-
       text-align: center;
     }
   }
@@ -60,10 +55,9 @@
   &__showcase {
     position: relative;
 
+    display: grid;
     grid-column: 1 / -1;
     grid-row: 2;
-
-    display: grid;
     place-items: center;
 
     min-width: 0;
@@ -128,13 +122,12 @@
   }
 
   &__button {
+    display: flex;
     grid-column: 1 / span 2;
     grid-row: 3;
-    align-self: end;
-
-    display: flex;
     gap: 8px;
     align-items: center;
+    align-self: end;
     justify-content: center;
 
     width: 100%;
@@ -162,9 +155,7 @@
 
     &:hover {
       transform: translateY(-2px);
-
       color: $color-white;
-
       background-color: $color-accent-orange;
     }
 
@@ -177,7 +168,6 @@
   &__button-icon {
     width: 20px;
     height: 20px;
-
     transition: filter $transition;
   }
 
