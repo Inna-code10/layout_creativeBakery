@@ -1,89 +1,149 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
+
   <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Creative Bakery</title>
-    <link rel="icon" type="image/svg+xml"
-    href="/src/images/logo.svg">
-    <link rel="stylesheet" href="/src/styles/main.scss">
+
+    <link
+      rel="icon" type="image/svg+xml"
+      href="/src/images/logo.svg"
+    />
+
+    <link
+      rel="stylesheet"
+      href="/src/styles/main.scss"
+    />
   </head>
 
   <body>
-    <!-- ===================== HEADER ===================== -->
     <header class="header">
       <div class="container header__inner">
         <a href="#top" class="header__logo">
-          <img class="  -mark" src="/src/images/logo.svg"
-          alt="Bakerlab logo">
+          <img
+            class="header__logo-mark"
+            src="/src/images/logo.svg"
+            alt="Bakerlab logo"
+          />
         </a>
 
-        <input type="checkbox" id="menu-toggle"
-        class="menu-toggle">
+        <input
+          type="checkbox"
+          id="menu-toggle"
+          class="menu-toggle"
+        />
 
         <div class="header__right">
           <nav class="header__nav">
             <ul class="header__list">
-              <li><a href="#products" class="header__link">Products</a></li>
-              <li><a href="#about" class="header__link">About Us</a></li>
-              <li><a href="#" class="header__link">Blog</a></li>
+              <li>
+                <a href="#products" class="header__link">
+                  Products
+                </a>
+              </li>
+
+              <li>
+                <a href="#about" class="header__link">
+                  About Us
+                </a>
+              </li>
+
+              <li>
+                <a href="#" class="header__link">
+                  Blog
+                </a>
+              </li>
+
               <li>
                 <a href="tel:+16295550129" class="header__contact">
-                  <img src="/src/images/phone.svg"
-                  class="header__contact-icon"
-                  alt="phone">
+                  <img
+                    src="/src/images/phone.svg"
+                    class="header__contact-icon"
+                    alt="Phone icon"
+                  />
+
                   Contact us
                 </a>
               </li>
             </ul>
           </nav>
 
-          <button type="button" id="theme-toggle"
-          class="theme-toggle" aria-pressed="false"
-            aria-label="Switch background theme (pink / blue)">
+          <button
+            type="button"
+            id="theme-toggle"
+            class="theme-toggle"
+            aria-pressed="false"
+            aria-label="Switch background theme (pink / blue)"
+          >
             <span class="theme-toggle__track">
               <span class="theme-toggle__thumb"></span>
             </span>
           </button>
 
-          <label for="menu-toggle" class="header__burger"
-          aria-label="Open menu">
+          <label
+            for="menu-toggle"
+            class="header__burger"
+            aria-label="Open menu"
+          >
             <img
               src="/src/images/icon-menu.svg"
-              alt="menu"
-              class="header__burger-icon">
+              alt="Menu"
+              class="header__burger-icon"
+            />
           </label>
         </div>
 
-        <!-- Full-screen mobile/tablet menu (checkbox-driven, no JS required to open) -->
         <div class="mobile-menu">
           <div class="mobile-menu__top">
             <a href="#top" class="header__logo">
               <img
-              class="header__logo-mark"
-              src="/src/images/logo.svg"
-              alt="Bakerlab logo">
+                class="header__logo-mark"
+                src="/src/images/logo.svg"
+                alt="Bakerlab logo"
+              />
             </a>
-            <label for="menu-toggle"
-            class="mobile-menu__close"
-            aria-label="Close menu">
+
+            <label
+              for="menu-toggle"
+              class="mobile-menu__close"
+              aria-label="Close menu"
+            >
               <img
-              src="/src/images/icon-close.svg"
-              alt="close"
-              class="mobile-menu__close-icon">
+                src="/src/images/icon-close.svg"
+                alt="Close"
+                class="mobile-menu__close-icon"
+              />
             </label>
           </div>
 
           <ul class="mobile-menu__list">
-            <li><a href="#products" class="mobile-menu__link">Products</a></li>
-            <li><a href="#about" class="mobile-menu__link">About Us</a></li>
-            <li><a href="#" class="mobile-menu__link">Blog</a></li>
+            <li>
+              <a href="#products" class="mobile-menu__link">
+                Products
+              </a>
+            </li>
+
+            <li>
+              <a href="#about" class="mobile-menu__link">
+                About Us
+              </a>
+            </li>
+
+            <li>
+              <a href="#" class="mobile-menu__link">
+                Blog
+              </a>
+            </li>
+
             <li>
               <a href="tel:+16295550129" class="mobile-menu__contact">
                 <img
                   src="/src/images/phone.svg"
                   class="mobile-menu__contact-icon"
-                  alt="phone">
+                  alt="Phone icon"
+                />
+
                 Contact us
               </a>
             </li>
@@ -93,7 +153,6 @@
     </header>
 
     <main id="top">
-      <!-- Hero / Products / About us / Footer come next -->
       <section class="hero" aria-labelledby="hero-title">
         <div class="container hero__inner">
           <p class="hero__description">
@@ -107,8 +166,7 @@
 
             <img
               class="hero__image"
-              src="/src/images/cookie.png"
-              alt="Chocolate chip cookie"
+              src="/src/images/cookie.png"  alt="Chocolate chip cookie"
             />
           </div>
 
@@ -121,6 +179,148 @@
 
             Learn more
           </a>
+        </div>
+      </section>
+
+      <section
+        class="products"
+        id="products"
+        aria-labelledby="products-title"
+      >
+        <div class="container">
+          <h2 class="products__title" id="products-title">
+            What we bake
+          </h2>
+
+          <p class="products__description">
+            We can customize our cookies right for your needs. Just imagine it
+          </p>
+
+          <div class="products__catalog">
+            <article class="product-card">
+              <img
+                class="product-card__image"
+                src="/src/images/lemon-cake.png"
+                alt="Lemon cake with white icing"
+              />
+
+              <p class="product-card__category">Cakes</p>
+
+              <p class="product-card__description">
+                Oatmeal cookies with golden raisins, orange zest and chocolate
+                chips
+              </p>
+
+              <a class="product-card__order" href="mailto:bakerlab@example.com?subject=Cake%20order">
+                <img src="/src/images/icon-arrow.svg" alt="Arrow icon" />
+
+                Order
+              </a>
+            </article>
+
+            <article class="product-card">
+              <img
+                class="product-card__image"
+                src="/src/images/cake.png"
+                alt="Chocolate biscuit coffee cake"
+              />
+
+              <p class="product-card__category">Cakes</p>
+
+              <p class="product-card__description">
+                Chocolate biscuit coffee cake topped with a buttercream and
+                powder
+              </p>
+
+              <a class="product-card__order" href="mailto:bakerlab@example.com?subject=Cake%20order">
+                <img src="/src/images/icon-arrow.svg" alt="Arrow icon" />
+
+                Order
+              </a>
+            </article>
+
+            <article class="product-card product-card--shifted">
+              <img
+                class="product-card__image"
+                src="/src/images/donuts.png"
+                alt="Croissant with cinnamon and almonds"
+              />
+
+              <p class="product-card__category">Donuts</p>
+
+              <p class="product-card__description">
+                Light multi-layered croissant strewn with cinnamon and almond
+                petals
+              </p>
+
+              <a class="product-card__order" href="mailto:bakerlab@example.com?subject=Donut%20order">
+                <img src="/src/images/icon-arrow.svg" alt="Arrow icon" />
+
+                Order
+              </a>
+            </article>
+
+            <article class="product-card product-card--shifted">
+              <img
+                class="product-card__image"
+                src="/src/images/donut.png"
+                alt="Croissant with coconut and nuts"
+              />
+
+              <p class="product-card__category">Donuts</p>
+
+              <p class="product-card__description">
+                Light multi-layered croissant strewn with coconut and nuts
+              </p>
+
+              <a class="product-card__order" href="mailto:bakerlab@example.com?subject=Donut%20order">
+                <img src="/src/images/icon-arrow.svg" alt="Arrow icon" />
+
+                Order
+              </a>
+            </article>
+
+            <article class="product-card">
+              <img
+                class="product-card__image"
+                src="/src/images/chocolate-cake.png"
+                alt="Chocolate salted caramel cake"
+              />
+
+              <p class="product-card__category">Cakes</p>
+
+              <p class="product-card__description">
+                Chocolate salted caramel, vanilla frutti pebbles
+              </p>
+
+              <a class="product-card__order" href="mailto:bakerlab@example.com?subject=Cake%20order">
+                <img src="/src/images/icon-arrow.svg" alt="Arrow icon" />
+
+                Order
+              </a>
+            </article>
+
+            <article class="product-card">
+              <img
+                class="product-card__image"
+                src="/src/images/cookies.png"
+                alt="Oatmeal cookies with chocolate chips"
+              />
+
+              <p class="product-card__category">Cookies</p>
+
+              <p class="product-card__description">
+                Oatmeal cookies with golden raisins, orange zest and chocolate
+                chips
+              </p>
+
+              <a class="product-card__order" href="mailto:bakerlab@example.com?subject=Cookie%20order">
+                <img src="/src/images/icon-arrow.svg" alt="Arrow icon" />
+
+                Order
+              </a>
+            </article>
+          </div>
         </div>
       </section>
     </main>

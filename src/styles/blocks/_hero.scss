@@ -8,6 +8,10 @@
     padding-top: 64px;
   }
 
+  @include mobile {
+    min-height: auto;
+  }
+
   &__inner {
     display: grid;
     grid-template-columns: repeat(8, minmax(0, 1fr));
@@ -29,7 +33,7 @@
 
       min-height: auto;
       padding-top: 32px;
-      padding-bottom: 40px;
+      padding-bottom: 0;
     }
   }
 
@@ -63,6 +67,9 @@
     min-width: 0;
 
     @include mobile {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
       margin-top: 32px;
     }
   }
@@ -113,11 +120,9 @@
       position: static;
       transform: none;
 
-      grid-row: 1;
-
       width: 288px;
       height: 290px;
-      margin-bottom: -118px;
+      margin-top: 24px;
     }
   }
 
@@ -150,7 +155,7 @@
 
     @include mobile {
       width: 100%;
-      margin-top: 72px;
+      margin-top: 32px;
     }
 
     &:hover {
