@@ -4,7 +4,6 @@
   flex-shrink: 0;
   align-items: center;
 
-
   &__track {
     position: relative;
 
@@ -13,7 +12,11 @@
     border: 1px solid rgba(28, 26, 38, 0.15);
     border-radius: $radius-pill;
 
-    background: linear-gradient(90deg, $color-light-pink 50%, $color-light-blue 50%);
+    background: linear-gradient(
+      90deg,
+      $color-light-pink 50%,
+      $color-light-blue 50%
+    );
   }
 
   &__thumb {

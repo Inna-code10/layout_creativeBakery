@@ -217,12 +217,12 @@
     height: 18px;
   }
 
-    &:hover {
-      transform: scale(1.05);
-    }
+  &:hover {
+    transform: scale(1.05);
+  }
 }
 
-.menu-toggle:checked~.mobile-menu {
+.menu-toggle:checked ~ .mobile-menu {
   transform: translateX(0);
   display: flex;
 }

@@ -6,7 +6,7 @@
   padding-bottom: 349px;
 
   background-color: var(--color-bg);
-  
+
   transition: background-color $transition;
 
   @include header-collapse {
