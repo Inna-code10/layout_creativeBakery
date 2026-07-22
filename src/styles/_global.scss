@@ -25,6 +25,10 @@ body {
   transition: background-color $transition;
 }
 
+body.is-menu-open {
+  overflow: hidden;
+}
+
 .container {
   width: 100%;
   max-width: $width-design;
